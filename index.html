@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galeri Foto</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">📸 MyGallery</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#gallery">Galeri</a>
+            <a href="#about">Tentang</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="badge">MY PHOTO GALLERY</span>
+
+            <h1>
+                Simpan Momen,
+                <span>Abadikan Cerita.</span>
+            </h1>
+
+            <p>
+                Kumpulan foto terbaik yang menyimpan
+                berbagai cerita dan kenangan.
+            </p>
+
+            <a href="#gallery" class="hero-btn">
+                Lihat Galeri ↓
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- GALERI -->
+    <section class="gallery-section" id="gallery">
+
+        <div class="section-title">
+
+            <span>MY COLLECTION</span>
+
+            <h2>Galeri Foto</h2>
+
+            <p>
+                Jelajahi berbagai momen yang telah diabadikan.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Cari foto..."
+            >
+
+        </div>
+
+
+        <!-- FILTER -->
+        <div class="filters">
+
+            <button class="filter-btn active" data-filter="all">
+                Semua
+            </button>
+
+            <button class="filter-btn" data-filter="nature">
+                Alam
+            </button>
+
+            <button class="filter-btn" data-filter="city">
+                Kota
+            </button>
+
+            <button class="filter-btn" data-filter="people">
+                Orang
+            </button>
+
+        </div>
+
+
+        <!-- FOTO -->
+        <div class="gallery" id="galleryContainer">
+
+            <div class="gallery-item"
+                 data-category="nature"
+                 data-title="Pemandangan Alam">
+
+                <img src="img/foto1.jpg" alt="Pemandangan Alam">
+
+                <div class="overlay">
+                    <h3>Foto Bareng</h3>
+                    <span>MOP</span>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item"
+                 data-category="city"
+                 data-title="Suasana Kota">
+
+                <img src="img/foto2.jpg" alt="Suasana Kota">
+
+                <div class="overlay">
+                    <h3>Foto Bareng</h3>
+                    <span>MOP</span>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item"
+                 data-category="people"
+                 data-title="Momen Bersama">
+
+                <img src="img/foto3.jpg" alt="Momen Bersama">
+
+                <div class="overlay">
+                    <h3>Momen Bersama</h3>
+                    <span>Ramean</span>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item"
+                 data-category="nature"
+                 data-title="Gunung">
+
+                <img src="img/foto4.jpg" alt="Gunung">
+
+                <div class="overlay">
+                    <h3>Sttt</h3>
+                    <span>Mop</span>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item"
+                 data-category="city"
+                 data-title="Malam Kota">
+
+                <img src="img/foto5.jpg" alt="Malam Kota">
+
+                <div class="overlay">
+                    <h3>Lomba tingkat</h3>
+                    <span>Lt2</span>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item"
+                 data-category="people"
+                 data-title="Persahabatan">
+
+                <img src="img/foto6.jpg" alt="Persahabatan">
+
+                <div class="overlay">
+                    <h3>foto keluarga</h3>
+                    <span>Ramean</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <div>
+
+            <span>ABOUT</span>
+
+            <h2>Tentang Galeri</h2>
+
+            <p>
+                Website ini dibuat untuk menyimpan dan
+                menampilkan berbagai foto dan momen
+                berharga dalam satu tempat.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+
+        <button class="close" id="closeBtn">
+            ✕
+        </button>
+
+        <button class="prev" id="prevBtn">
+            ❮
+        </button>
+
+        <div class="lightbox-content">
+
+            <img id="lightboxImg" src="" alt="">
+
+            <div class="lightbox-info">
+
+                <h3 id="lightboxTitle">
+                    Judul Foto
+                </h3>
+
+                <p id="lightboxCategory">
+                    Kategori
+                </p>
+
+            </div>
+
+        </div>
+
+        <button class="next" id="nextBtn">
+            ❯
+        </button>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 MyGallery. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
